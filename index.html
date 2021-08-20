@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-aula01 </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Arquipélago de Alcatrazes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quem somos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Colabore conosco!
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Seja redator</a>
+                <a class="dropdown-item" href="#">Contribua com artigos</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Sugestões?</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Desativado</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/alcatrazes.png" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/mergulho.png" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/testeiranova.png" alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1 class="display-4">Olá, viajante!</h1>
+    <p class="lead">Aqui você encontra as melhores informações sobre o Arquipélago de Alcatrazes, um dos tesouros nacionais.</p>
+    <hr class="my-4">
+    <p>Role para baixo e encha-se de aprendizados!</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
+  </div>
+<!-- /Jumbotron -->
+
+ <!-- Texto e vídeo> -->
+ <div class="container mt-5 mb-5">
+  <div class="row">
+      <div class="col-md-6">
+          <h3>O arquipélago</h3>
+          <p>Alcatrazes é um arquipélago brasileiro, localizado aproximadamente 35 km ao sul de São Sebastião, no litoral norte do Estado de São Paulo, a uma hora de barco, aproximadamente.
+
+            O arquipélago é formado por cinco ilhas maiores, sendo a principal denominada Ilha de Alcatrazes (2,5km de extensão[2] e 170 hectares de área) e as demais conhecidas como da Sapata, do Paredão, do Porto (ou do Farol) e do Sul. Há também quatro ilhas menores (ilhotas não nominadas); cinco lajes (Dupla, Singela, do Paredão, do Farol e Negra); e dois parcéis (Nordeste e Sudeste).
+            
+            Alcatrazes é o maior sítio reprodutivo de aves marinhas da costa brasileira, com uma população que gira em torno de 10 mil aves. Além disso, por conta de sua diversidade de flora e fauna, com mais de 20 espécies endêmicas, o arquipélago é conhecido como "Galápagos do Brasil".</p>
+      </div>
+
+      <div class="col-md-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IgHURxeu2hE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+<!-- /Texto e vídeo> -->
+
+ <!-- Cards -->
+    
+ <div class="card-deck mt-5 mb-5">
+  <div class="card ">
+      <img class="card-img-top" src="img/turismo.png" alt="Imagem de capa do card">
+    <div class="card-body">
+          <h5 class="card-title">É possível visitar?</h5>
+          <p class="card-text">Antes reservada apenas para pesquisadores área está liberada e atende um pedido antigo dos moradores e visitantes; diversidade de aves e da vida marinha encantam.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Atualizados 3 minutos atrás</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/ecoturismo.png" alt="Imagem de capa do card">
+    <div class="card-body">
+      <h5 class="card-title">Ecoturismo sustentável</h5>
+      <p class="card-text">O ecoturismo no Refúgio de Alcatrazes foi planejado com base em modelos de gestão e experiências nacionais e internacionais, buscando conciliar a necessidade de conservação do arquipélago dos Alcatrazes com o turismo e colaborando com o desenvolvimento econômico da região. Para isso, foi criado um Plano de Manejo pela equipe do Refúgio (ICMBio) com participação do seu conselho consultivo, da Marinha do Brasil, dos operadores de turismo e pesquisadores parceiros.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Atualizados 3 minutos atrás</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/atividade.png" alt="Imagem de capa do card">
+    <div class="card-body">
+      <h5 class="card-title">Opções de atividades</h5>
+      <p class="card-text">A visitação é operada somente por empresas autorizadas pelo ICMBio, e funcionam de quarta a domingo, das 8h às 16h. Os visitantes poderão fazer mergulho autônomo e livre ou visita embarcada com mergulho de flutuação e observação de fauna marinhas (aves, peixes, mamíferos e tartarugas). Não é cobrada nenhuma taxa de ingresso no Refúgio de Alcatrazes para os visitantes, porém, não é permitido desembarcar nas ilhas.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Atualizados 3 minutos atrás</small>
+    </div>
+  </div>
+</div>
+
+<!-- Formulário -->
+<div class="row">
+   <div class="col-md-12">
+       <h4 class="text-center"> 
+           Entre em contato conosco
+       </h4>
+   </div> 
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+      <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Assunto</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Escolha uma opção</option>
+              <option>Informações</option>
+              <option>Cntribuições</option>
+              <option>Contatos</option>
+              <option>Patrocínio</option>
+              <option>Dúvidas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Mensagem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+  </div> 
+</div>      
+
+
+<!--/Formulário -->
+
+
+<!-- Rodapé -->
+<hr>
+<footer >
+
+  <div class="row mb-3">
+      <div class="col-md-12 d-flex justify-content-center">
+
+              <a href="https://www.facebook.com/" target="_blank" class="p-5">
+                  <img class="tm-social" src="./img/facebook.png" alt="Logo do Facebook">
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="p-5">
+                  <img class="tm-social" src="./img/instagram.png" alt="Logo do instagram">
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank" class="p-5">
+                  <img class="tm-social" src="./img/linkedin.png" alt="Logo do Linkedin">
+              </a>
+
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-12">
+          <p class="text-center">
+              Todos os direitos reservados: Matheus Tabarelli &copy;
+          </p>
+      </div>
+  </div> 
+  
+</footer>
+
+</div>
+<!-- /Cards -->
+
+  
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
